@@ -13,12 +13,14 @@ nav {
 nav a {
     text-decoration: none;
     /* paring! */
+    width: 160px;
     font-family: Arial, Helvetica, sans-serif;
-    display: block;
     padding: 0.5em 1em;
     background-color: BLACK;
     color: WHITE;
     border: 1px solid #20C20E;
+    display: flex;
+    justify-content: center;
 }
 nav a:hover {
     background-color: #F29F05;
@@ -33,10 +35,32 @@ body {
 }
 
 .box {
-  width: 350px;
-  height: 165px;
+  width: auto;
+  height: auto;
   background-color: BLACK;
-  border: 2px solid WHITE;
-  padding: 50px;
-  margin: 20px;
+  border: 2px solid #20C20E;
+  padding: 5px;
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: WHITE;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+/* The reason I do this is because otherwise the entire box will be offset and thats bad */
+
+.box p {
+  color: lightgray;
+  margin-top: -1px; 
+}
+
+.box h1 {
+  margin-top: -1px;
+}
+
+.box h2 {
+  margin-top: -1px;
 }
